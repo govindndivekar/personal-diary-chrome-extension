@@ -79,8 +79,10 @@ Want any of these? Just open an issue or let me know — happy to add them!
 ## License
 
 MIT — do whatever you want with it. Made with ❤️ for personal use.
+
 icon - https://www.flaticon.com/free-icons/128 - 128 icons created by Shuvo.Das - Flaticon
 
 ---
+
 
 **Made for people who want a simple, beautiful, truly private diary.**
