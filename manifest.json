@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "My Diary",
+  "version": "1.0",
+  "description": "Personal diary that saves real .md files locally",
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"]
+}

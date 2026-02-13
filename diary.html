@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Diary</title>
+  <style>
+    body {
+		margin:0; 
+		font-family: system-ui; 
+		background:#f8f9fa; 
+	}
+    .container {
+		max-width: 90%; 
+		margin:40px auto; 
+		padding:20px; 
+		background:white; 
+		border-radius:12px; 
+		box-shadow:0 4px 20px rgba(0,0,0,0.1); 
+	}
+    h1 { 
+		text-align:center; 
+		margin-bottom:20px; 
+	}
+    input[type="date"] {
+		padding:10px; 
+		font-size:16px; 
+		margin-bottom:15px; 
+	}
+    textarea {
+		width:95%; 
+		height:520px; 
+		font-size:17px; 
+		padding:15px; 
+		border:1px solid #ddd; 
+		border-radius:8px; 
+		resize:none; 
+	}
+    .buttons {
+		text-align:center; 
+		margin-top:15px; 
+	}
+    button {
+		padding:12px 24px; 
+		font-size:16px; 
+		margin:0 8px; 
+		border:none; 
+		border-radius:8px; 
+		cursor:pointer; 
+	}
+    button.save {
+		background:#28a745; 
+		color:white; 
+	}
+    button.load {
+		background:#007bff; 
+		color:white; 
+	}
+    #status {
+		text-align:center; 
+		margin-top:15px; 
+		font-weight:bold; 
+	}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📔 My Personal Diary</h1>
+    
+    <button id="selectFolder" style="display:block; margin:0 auto 20px;">Choose Diary Folder</button>
+    
+    <div id="main" style="display:none">
+      <input type="date" id="date">
+      <textarea id="content" placeholder="Write your thoughts here..."></textarea>
+      <div class="buttons">
+        <button class="save" id="save">💾 Save Entry</button>
+        <button class="load" id="load">📂 Load This Date</button>
+      </div>
+      <div id="status"></div>
+    </div>
+  </div>
+
+  <script src="diary.js"></script>
+</body>
+</html>
